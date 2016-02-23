@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://sipjs.com/download/sip-0.7.0.min.js"></script>
+        <script src="./js/app.js"></script>
+
+        <link type="text/css" rel="stylesheet" href="./css/app.css"></link>
+    </head>
+    <body>
+
+<div id="content-video-audio">
+  <h2>In-browser Video Chat is Now a Breeze</h2>
+  <h4 class="intro">Here's a demo. Start a video chat between Alice and Bob.</h4>
+  <div class="two-column-boxes">
+    <div class="column-box">
+      <div class="demo-window">
+        <div class="demo-view">
+          <video id="video-of-bob" muted="muted"></video>
+        </div>
+        <div class="left">
+          <h4>Alice's View</h4>
+          <h5>Demo user one</h5>
+        </div>
+        <button id="alice-video-button" class="right" type="button">video</button>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="column-box">
+      <div class="demo-window">
+        <div class="demo-view">
+          <video id="video-of-alice" muted="muted"></video>
+        </div>
+        <div class="left">
+          <h4>Bob's View</h4>
+          <h5>Demo user two</h5>
+        </div>
+        <button id="bob-video-button" class="right" type="button">video</button>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+<div id="content-message">
+  <h2>Real-Time Messaging with a Dozen Lines of Code</h2>
+  <h4 class="intro">Check it out. Instant message between Alice and Bob.</h4>
+  <div class="two-column-boxes">
+    <div class="column-box">
+      <div class="demo-window">
+        <div class="demo-view">
+          <div id="alice-message-display" class="message-display">
+            <p class="message"><span class="message-from">Bob:</span> <span class="message-body placeholder">No messages yet</span></p>
+          </div>
+          <textarea id="alice-message-input" class="message-input" placeholder="Enter your message to Bob here!"></textarea>
+        </div>
+        <div class="left">
+          <h4>Alice's View</h4>
+          <h5>Demo user one</h5>
+        </div>
+        <button id="alice-message-button" class="right" type="button">send message</button>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="column-box">
+      <div class="demo-window">
+        <div class="demo-view">
+          <div id="bob-message-display" class="message-display">
+            <p class="message"><span class="message-from">Alice:</span> <span class="message-body placeholder">No messages yet</span></p>
+          </div>
+          <textarea id="bob-message-input" class="message-input" placeholder="Enter your message to Alice here!"></textarea>
+        </div>
+        <div class="left">
+          <h4>Bob's View</h4>
+          <h5>Demo user two</h5>
+        </div>
+        <button id="bob-message-button" class="right" type="button">send message</button>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+<div id="content-data-channel">
+  <h2>Send Real-Time Data In A Flash</h2>
+  <h4 class="intro">Go ahead. Upload a file as Alice and Download it as Bob.</h4>
+  <div class="two-column-boxes">
+    <div class="column-box">
+      <div class="demo-window">
+        <div class="demo-view">
+          <div id="alice-data-display" class="message-display">
+            <p class="message"><span class="message-body placeholder">No files yet sent or received</span></p>
+          </div>
+        </div>
+        <span class="file-chooser-hack">
+          <button id="alice-file-choose-button" class="file-choose-button dark-gray-bg" type="button">choose a file to send</button>
+          <input id="alice-file-choose-input" type="file" name="file" class="file-choose-button" />
+        </span>
+        <span id="alice-filename" class="message-body">no file selected</span>
+        <div class="message-body file-info-msg">Max file size is 16KB</div>
+        <div id="alice-file-error-msg" class="file-info-msg error-msg"></div>
+        <div class="left">
+          <h4>Alice's View</h4>
+          <h5>Demo user one</h5>
+        </div>
+        <button id="alice-data-share-button" class="right" type="button">share</button>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="column-box">
+      <div class="demo-window">
+        <div class="demo-view">
+          <div id="bob-data-display" class="message-display">
+            <p class="message"><span class="message-body placeholder">No files yet sent or received</span></p>
+          </div>
+        </div>
+        <span class="file-chooser-hack">
+          <button id="bob-file-choose-button" class="file-choose-button dark-gray-bg" type="button">choose a file to send</button>
+          <input id="bob-file-choose-input" type="file" name="file" class="file-choose-button" />
+        </span>
+        <span id="bob-filename" class="message-body">no file selected</span>
+        <div class="message-body file-info-msg">Max file size is 16KB</div>
+        <div id="bob-file-error-msg" class="file-info-msg error-msg"></div>
+        <div class="clearfix"></div>
+        <div class="left">
+          <h4>Bob's View</h4>
+          <h5>Demo user two</h5>
+        </div>
+        <button id="bob-data-share-button" class="right" type="button">share</button>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+
+    </body>
+</html>

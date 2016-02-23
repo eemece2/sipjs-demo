@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://sipjs.com/download/sip-0.7.0.min.js"></script>
+        <script src="./js/basic.js"></script>
+    </head>
+    <body>
+
+<div id="content-video-audio">
+  <h2>In-browser Video Chat is Now a Breeze</h2>
+  <h4 class="intro">Here's a demo. Start a video chat between Alice and Bob.</h4>
+  <div class="two-column-boxes">
+    <div class="column-box">
+      <div class="demo-window">
+        <div class="demo-view">
+          <video id="video-of-bob" muted="muted"></video>
+        </div>
+        <div class="left">
+          <h4>Alice's View</h4>
+          <h5>Demo user one</h5>
+        </div>
+        <button id="alice-video-button" class="right" type="button">video</button>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+    <div class="column-box">
+      <div class="demo-window">
+        <div class="demo-view">
+          <video id="video-of-alice" muted="muted"></video>
+        </div>
+        <div class="left">
+          <h4>Bob's View</h4>
+          <h5>Demo user two</h5>
+        </div>
+        <button id="bob-video-button" class="right" type="button">video</button>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+
+    </body>
+</html>
